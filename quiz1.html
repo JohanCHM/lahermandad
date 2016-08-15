@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="La Hermandad. Una serie original de Claro Video. Quiz">
+	<meta name="author" content="CTIN">
+	<title>La Hermandad Conoce que tan maquiavelico eres</title>
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<script src="js/jquery-3.1.0.min.js"></script>
+
+<script>
+
+function cambiar_div(origen,destino){
+	$(destino).fadeIn(3000);
+	$(origen).fadeOut(3000);
+}
+
+$( document ).ready(function() {
+    setTimeout(function() {
+		$('#txt_titulo').fadeIn(2000);
+    }, 500);
+    setTimeout(function() {
+		cambiar_div('#txt_titulo','#txt_frase');
+    }, 3000);
+    setTimeout(function() {
+		cambiar_div('#div_main','#div_intro');
+    }, 6000);
+});
+
+</script>
+
+</head>
+<body>
+<audio autoplay loop id="player">
+	<source src="aud/Crypto.mp3" type="audio/mpeg">
+</audio>
+
+<div id="div_main" style="display:block;" >
+	<div class="div_pic" style="background-image:url('pic/q1_title.gif');"></div>
+	<span class="txt_mid_center" id="txt_titulo">Conoce que tan maquiavelico eres.</span>
+	<span class="txt_mid_center" id="txt_frase">Todavía escucho las voces que no oí</span>
+</div>
+
+<div class="div_main" id="div_intro">
+	<div class="div_pic" style="background-image:url('pic/q1_intro.gif');"></div>
+	<div class="txt_top_left">
+		<h2>Al encontrarte en un situación de peligro, ¿Cuál crees que sería tu primer reacción?</h2>
+		<div class="opc-div" onclick="cambiar_div('#div_intro','#div_a');">
+			<a href="#div-a">
+				<p>Pedir ayuda</p>
+			</a>
+		</div>
+		<div class="opc-div" onclick="cambiar_div('#div_intro','#div_b');">
+			<a href="#div_b">
+				<p>Salir corriendo</p>
+			</a>
+		</div>
+		<div class="opc-div" onclick="cambiar_div('#div_intro','#div_c');">
+			<a href="#div_c">
+				<p>Afrontar la situación</p>
+			</a>
+		</div>
+	</div>
+</div>
+
+
+<p class="creditos">Crypto Kevin MacLeod (incompetech.com)<br>
+Licensed under Creative Commons: By Attribution 3.0 License<br>
+http://creativecommons.org/licenses/by/3.0/</p>
+</body>

@@ -44,9 +44,9 @@ $( document ).ready(function() {
 <div class="div_main" id="div_intro">
 	<div class="div_pic" style="background-image:url('pic/q1_intro.gif');"></div>
 	<div class="txt_top_left">
-		<h2>Al encontrarte en un situación de peligro, ¿Cuál crees que sería tu primer reacción?</h2>
+		<h2>Al encontrarte en una situación de peligro, ¿Cuál crees que sería tu primera reacción? </h2>
 		<div class="opc-div" onclick="cambiar_div('#div_intro','#div_a');">
-			<a href="#div-a">
+			<a href="#div_a">
 				<p>Pedir ayuda</p>
 			</a>
 		</div>
@@ -58,6 +58,181 @@ $( document ).ready(function() {
 		<div class="opc-div" onclick="cambiar_div('#div_intro','#div_c');">
 			<a href="#div_c">
 				<p>Afrontar la situación</p>
+			</a>
+		</div>
+	</div>
+</div>
+
+<div class="div_main" id="div_a">
+	<div class="div_pic" style="background-image:url('pic/q1_a.gif');"></div>
+	<div class="txt_top_left">
+		<h2>¿Olvidas con facilidad cuando alguien te ha hecho daño?</h2>
+		<div class="opc-div" onclick="cambiar_div('#div_intro','#div_aa');">
+			<a href="#div_a">
+				<p>Sí, no soy rencoroso.</p>
+			</a>
+		</div>
+		<div class="opc-div" onclick="cambiar_div('#div_intro','#div_ab');">
+			<a href="#div_b">
+				<p>Sí, el tiempo lo cobra todo.</p>
+			</a>
+		</div>
+		<div class="opc-div" onclick="cambiar_div('#div_intro','#div_ac');">
+			<a href="#div_c">
+				<p>No, busco venganza.</p>
+			</a>
+		</div>
+	</div>
+</div>
+
+<div class="div_main" id="div_aa">
+	<div class="div_pic" style="background-image:url('pic/q1_aa.gif');"></div>
+	<div class="txt_top_left">
+		<h2>¿Te enfadas con facilidad cuando alguien entorpece tus actividades?</h2>
+		<div class="opc-div" onclick="cambiar_div('#div_intro','#div_aaS');">
+			<a href="#div-a">
+				<p>Solo si es importante.</p>
+			</a>
+		</div>
+		<div class="opc-div" onclick="cambiar_div('#div_intro','#div_aaS');">
+			<a href="#div_b">
+				<p>No, evito los problemas.</p>
+			</a>
+		</div>
+	</div>
+</div>
+
+<div class="div_main" id="div_ab">
+	<div class="div_pic" style="background-image:url('pic/q1_ab.gif');"></div>
+	<div class="txt_top_left">
+		<h2>¿Trabajas duro, juegas intensamente y tratas de ser el mejor en lo que haces?</h2>
+		<div class="opc-div" onclick="cambiar_div('#div_intro','#div_abS');">
+			<a href="#div-a">
+				<p>Sí, me gusta ser el mejor.</p>
+			</a>
+		</div>
+		<div class="opc-div" onclick="cambiar_div('#div_intro','#div_abS');">
+			<a href="#div_b">
+				<p>No, todo me da igual.</p>
+			</a>
+		</div>
+	</div>
+</div>
+
+<div class="div_main" id="div_ac">
+	<div class="div_pic" style="background-image:url('pic/q1_ab.gif');"></div>
+	<div class="txt_top_left">
+		<h2>Cuando te enojas ¿te aceleras y realizas actos sin pensar en las consecuencias?</h2>
+		<div class="opc-div" onclick="cambiar_div('#div_intro','#div_acS');">
+			<a href="#div-a">
+				<p>Sí, soy impulsivo.</p>
+			</a>
+		</div>
+		<div class="opc-div" onclick="cambiar_div('#div_intro','#div_acS');">
+			<a href="#div_b">
+				<p>No, me caracterizo por ser paciente.</p>
+			</a>
+		</div>
+	</div>
+</div>
+
+<div class="div_main" id="div_b">
+	<div class="div_pic" style="background-image:url('pic/q1_b.gif');"></div>
+	<div class="txt_top_left">
+		<h2>¿Te consideras ambicioso?</h2>
+		<div class="opc-div" onclick="cambiar_div('#div_intro','#div_ba');">
+			<a href="#div-a">
+				<p>Me gusta tener lo mejor.</p>
+			</a>
+		</div>
+		<div class="opc-div" onclick="cambiar_div('#div_intro','#div_bb');">
+			<a href="#div_b">
+				<p>Me conformo con lo que tengo.</p>
+			</a>
+		</div>
+	</div>
+</div>
+
+<div class="div_main" id="div_ba">
+	<div class="div_pic" style="background-image:url('pic/q1_ba.gif');"></div>
+	<div class="txt_top_left">
+		<h2>¿Te sientes bastante impaciente cuando tienes que esperar resultados?</h2>
+		<div class="opc-div" onclick="cambiar_div('#div_intro','#div_baS');">
+			<a href="#div-a">
+				<p>Sí, mi ritmo de vida es acelerado.</p>
+			</a>
+		</div>
+		<div class="opc-div" onclick="cambiar_div('#div_intro','#div_baS');">
+			<a href="#div_b">
+				<p>No, me caracterizo por ser paciente.</p>
+			</a>
+		</div>
+	</div>
+</div>
+
+<div class="div_main" id="div_bb">
+	<div class="div_pic" style="background-image:url('pic/q1_bb.gif');"></div>
+	<div class="txt_top_left">
+		<h2>¿Te enfadas cuando fracasas en cosas que intentas hacer?</h2>
+		<div class="opc-div" onclick="cambiar_div('#div_intro','#div_bbS');">
+			<a href="#div-a">
+				<p>Sí, me enfado.</p>
+			</a>
+		</div>
+		<div class="opc-div" onclick="cambiar_div('#div_intro','#div_bbS');">
+			<a href="#div_b">
+				<p>No, lo dejo pasar.</p>
+			</a>
+		</div>
+	</div>
+</div>
+
+<div class="div_main" id="div_c">
+	<div class="div_pic" style="background-image:url('pic/q1_c.gif');"></div>
+	<div class="txt_top_left">
+		<h2>¿Trabajas duro, juegas intensamente y tratas de ser el mejor en lo que haces?</h2>
+		<div class="opc-div" onclick="cambiar_div('#div_intro','#div_ca');">
+			<a href="#div-a">
+				<p>Sí, me gusta ser el mejor.</p>
+			</a>
+		</div>
+		<div class="opc-div" onclick="cambiar_div('#div_intro','#div_cb');">
+			<a href="#div_b">
+				<p>No, me es indiferente.</p>
+			</a>
+		</div>
+	</div>
+</div>
+
+<div class="div_main" id="div_ca">
+	<div class="div_pic" style="background-image:url('pic/q1_ca.gif');"></div>
+	<div class="txt_top_left">
+		<h2>¿Cuándo te enojas te aceleras y realizas actos sin pensar en las consecuencias?</h2>
+		<div class="opc-div" onclick="cambiar_div('#div_intro','#div_caS');">
+			<a href="#div-a">
+				<p>Si, soy impulsivo.</p>
+			</a>
+		</div>
+		<div class="opc-div" onclick="cambiar_div('#div_intro','#div_caS');">
+			<a href="#div_b">
+				<p>No, me caracterizo por ser paciente.</p>
+			</a>
+		</div>
+	</div>
+</div>
+
+<div class="div_main" id="div_cb">
+	<div class="div_pic" style="background-image:url('pic/q1_ca.gif');"></div>
+	<div class="txt_top_left">
+		<h2>"¿Olvidas con facilidad a alguien que te ha hecho daño?</h2>
+		<div class="opc-div" onclick="cambiar_div('#div_intro','#div_cbS');">
+			<a href="#div-a">
+				<p>No soy rencoroso.</p>
+			</a>
+		</div>
+		<div class="opc-div" onclick="cambiar_div('#div_intro','#div_cbS');">
+			<a href="#div_b">
+				<p>Busco venganza.</p>
 			</a>
 		</div>
 	</div>
